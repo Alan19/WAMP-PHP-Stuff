@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<!-- Zhen Xiao -->
+<html>
+	<head>
+		<title>Pokemon Quiz</title>
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans|Merriweather' rel='stylesheet' type='text/css'>
+		<link href='pokemonQuiz.css' rel="stylesheet" />
+		<style>
+			div{
+				margin-top: 25px;
+			}
+			body{
+				background-image:url("images/25pikachu-f1920x1200-1024x640.jpg");
+				background-size:cover;
+			}
+		</style>
+		<script></script>
+	</head>
+	<body>
+		<h1>Find out what is your trainer class!</h1>
+		<form method = "POST" action = "results.php">
+			<div class = "centered">
+				What is your name?<br />
+				<input type = "text" name = "firstName" placeholder= "First Name" />
+				<input type = "text" name = "lastName" placeholder= "Last Name" />
+			</div>
+			<div class = "centered">
+				Is this your first quiz?<br />
+					<label>Yes<input type = "radio" value = "on" name = "firstQuiz" /></label>
+					<label>No<input type = "radio" value = "off" name = "firstQuiz" /></label>
+			</div>
+			<div class = "centered">
+				Are you a Boy or a Girl?<br />
+				<label>Boy<input type = "radio" name = "gender" value = "Boy" /></label>
+				<label>Girl<input type = "radio" name = "gender" value = "Girl" /></label>
+			</div>
+			<div class = "centered">
+				What type of strategy do you like?<br />
+				<label>Offensive<input type = "radio" value = "Offensive" name = "strat" /></label>
+				<label>Defensive<input type = "radio" value = "Defensive" name = "strat" /></label>
+				<label>Balanced<input type = "radio" value = "Balanced" name = "strat" /></label>
+				<label>No Strategy<input type = "radio" value = "No Strategy" name = "strat" /></label>
+			</div>
+			<div class = "centered">
+				Which of these types do you like the most?<br />
+					<label>Grass<input type = "radio" name = "favoriteType" value = "forestGreen" /></label>
+					<label>Fire<input type = "radio" name = "favoriteType" value = "#B22222" /></label>
+					<label>Water<input type = "radio" name = "favoriteType" value = "dodgerBlue" /></label>
+					<label>Electric<input type = "radio" name = "favoriteType" value = "gold" /></label>
+				</select>
+			</div>
+			<div class = "centered">
+				Do you like to have fun?<br />
+				<label>Yes<input type = "radio" value = "Yes" name = "fun" /></label>
+				<label>No<input type = "radio" value = "No" name = "fun" /></label>
+				<label>I Like Tormenting my Opponents<input type = "radio" value = "Troll" name = "fun" /></label>
+				<label>Only if I win<input type = "radio" value = "Win" name = "fun" /></label>
+			</div>
+			<div class = "centered">
+				Where do you live?</br>
+				<label>Japan<input type = "radio" value = "JP" name = "location" /></label>
+				<label>USA<input type = "radio" value = "US" name = "location" /></label>
+				<label>France<input type = "radio" value = "FR" name = "location" /></label>
+				<label>Somewhere Else<input type = "radio" value = "SE" name = "location" /></label>
+			</div>
+			<div class = "centered">
+				How old are you<br />
+				<label>0-9<input type = "radio" value = "Young" name = "age" /></label>
+				<label>10-18<input type = "radio" value = "Teen" name = "age" /></label>
+				<label>18-65<input type = "radio" value = "Adult" name = "age" /></label>
+				<label>>65<input type = "radio" value = "Senior" name = "age" /></label>
+			</div>
+			<div class = "centered">
+				What is your job<br />
+				<label>Scientist<input type = "radio" value = "Scientist" name = "job" /></label>
+				<label>Student<input type = "radio" value = "Student" name = "job" /></label>
+				<label>Police<input type = "radio" value = "Police" name = "job" /></label>
+				<label>Other<input type = "radio" value = "other" name = "job" /></label>
+			</div>
+			<div class = "centered">
+				Are you comfortable with standing still for long periods of time?<br />
+				<label>Yes<input type = "radio" value = "Yes" name = "standing" /></label>
+				<label>No<input type = "radio" value = "No" name = "standing" /></label>
+				<label>Depends on the Weather<input type = "radio" value = "Maybe" name = "standing" /></label>
+				<label>Only if I get paid for it<input type = "radio" value = "Paid" name = "standing" /></label>
+			</div>
+			<div class = "centered">
+				What type of setting do you prefer?<br />
+				<label>City<input type = "radio" value = "City" name = "setting" /></label>
+				<label>Countryside<input type = "radio" value = "Countryside" name = "setting" /></label>
+				<label>Caves<input type = "radio" value = "Caves" name = "setting" /></label>
+				<label>Forest<input type = "radio" value = "Forest" name = "setting" /></label>
+			</div>
+			<div class = "centered">
+				How much Pokedollars do you make every day?<br />
+				<label>500<input type = "radio" value = "Poor" name = "income" /></label>
+				<label>5000<input type = "radio" value = "Decent" name = "income" /></label>
+				<label>100000<input type = "radio" value = "Rich" name = "income" /></label>
+				<label>>1000000<input type = "radio" value = "Really Rich" name = "income" /></label>
+			</div>
+			<div class = "centered">
+				What do you do at a Pokemon Center?<br />
+				<label>Buy a lot of items<input type = "radio" value = "Shop" name = "utility" /></label>
+				<label>Heal your Pokemon<input type = "radio" value = "Heal" name = "utility" /></label>
+				<label>Access your PC<input type = "radio" value = "PC" name = "utility" /></label>
+				<label>Talk with others<input type = "radio" value = "Talk" name = "utility" /></label>
+			</div>
+			<input type = "submit" />
+		</form>
+	</body>
+</html>
