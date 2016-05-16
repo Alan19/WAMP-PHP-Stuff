@@ -11,7 +11,7 @@ h1{
 p{
     font:18pt Merriweather;
 }
-a{
+a, .submitButton{
     background:linear-gradient(60deg, orangered, dodgerblue);
     border-radius: 3px;
     text-align: center;
@@ -20,6 +20,7 @@ a{
     text-align: center;
     color:white;
     font:24px open sans;
+	border-style:none;
 }
 .option{
 	margin-top:10px;
