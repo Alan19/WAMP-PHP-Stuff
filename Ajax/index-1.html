@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<!-- Zhen Xiao -->
+<html>
+	<head>
+		<title>AJAX Test</title>
+		<script type = "text/javascript" />
+		<style></style>
+		<script>
+			function initialize(){
+				foodGroupOut = document.getElementById("food-group");
+				foodIn = document.getElementById("txt_foods");
+			}
+			function sendRequest(){
+				req = new XMLHttpRequest();
+
+				req.onreadystatechange = function(){
+					if (req.readyState == 4){
+						foodGroupOut.innerHTML = req.responseText;
+					}
+					url = "foods.php?food=" + foodIn.value;
+					req.open("GET", url, true);
+					req.send(null);
+				}
+			}
+		</script>
+	</head>
+	<body onload="initialize();">
+		Pick a food: <input type= "text" id= "txt_foods" />
+		<input type="button" value="Check the Food Group" onclick="sendRequest();" /><br />
+
+		<div id="food-group"></div>
+	</body>
+</html>
